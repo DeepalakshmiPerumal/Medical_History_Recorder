@@ -808,7 +808,6 @@ func (t *SimpleChaincode) check_unique_ILNS(stub shim.ChaincodeStubInterface, IL
 //	 Main - main - Starts up the chaincode
 //=================================================================================================================================
 func main() {
-
 	err := shim.Start(new(SimpleChaincode))
 
 	if err != nil { fmt.Printf("Error starting Chaincode: %s", err) }
